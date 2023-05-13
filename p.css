@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+body{
+  font-family: 'Noto Serif JP', serif;
+  color: #212529;
+  padding: 1rem 0 5rem 0;
+}
+.comp-container,.header-con{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.header-text{
+  padding: 3rem 2rem 4rem 1rem;
+  font-size: 24px;
+  font-weight: 600;
+}
+img{
+  width: 500px;
+}
+.image-con{
+  height: 380px;
+  overflow: hidden;
+}
+.text-con{
+  padding-right: 200px;
+  position: relative;
+}
+.card-title{
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 4.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+.card-text{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+.link-con{
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+}
+.link-con i{
+  transition: all 0.25s ease-in-out;
+  transform: translateX(15px);
+  font-size: 1.3rem;
+}
+.link-con:hover i{
+  transform: translateX(5px);
+  color: #282828;
+}
+.link-con:hover{
+  color: #616161;
+}
+
+@media screen and (min-width: 1200px) {
+  .text-con{
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .text-con{
+    padding-right: 100px;
+  }
+  .comp-container{
+    padding: 2rem;
+  }
+  .header-text{
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 576px) {
+  .text-con{
+    padding-right: 50px;
+  }
+  img{
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .text-con{
+    padding-right: auto;
+  }
+}
